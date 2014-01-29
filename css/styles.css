@@ -1,3 +1,8 @@
 .toc_chap_num {
 	padding-right: 1em;
 }
+
+.inactive {
+	background-color: red;
+	/*background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);*/
+}

@@ -643,10 +643,10 @@ Les 3 options obligatoires pour la France sont : </p>
     <tr><td>Admission hospitalisé (Patient Class = I)</td><td>A01</td><td>A11</td><td>Z99</td></tr>
     <tr><td>Admission hospitalisé en attente (Patient Class = I)</td><td>A14</td><td>A27</td><td>Z99</td></tr>
     <tr><td>Activité externe (Patient Class = O ou E)</td><td>A04</td><td>A11</td><td>Z99</td></tr>
-    <tr><td>Changement de statut, externe ou urgence vers hospitalisé </td></tr>
-    <tr><td>(Patient Class : O &rarr; I ou E &rarr; I)</td><td>A06</td><td>A07</td><td>Z99</td></tr>
-    <tr><td>Changement de statut,  hospitalisé ou urgence vers externe </td></tr>
-    <tr><td>(Patient Class : I &rarr; O ou E &rarr; O)</td><td>A07</td><td>A06</td><td>Z99</td></tr>
+    <tr><td>Changement de statut, externe ou urgence vers hospitalisé <br/>
+    (Patient Class : O &rarr; I ou E &rarr; I)</td><td>A06</td><td>A07</td><td>Z99</td></tr>
+    <tr><td>Changement de statut,  hospitalisé ou urgence vers externe <br/>
+    (Patient Class : I &rarr; O ou E &rarr; O)</td><td>A07</td><td>A06</td><td>Z99</td></tr>
     <tr><td>Changement de médecin responsable (Attending Doctor)</td><td>A54</td><td>A55</td><td>Z99</td></tr>
     <tr><td>Mutation : Changement d'UF d'Hébergement, et/ou de localisation</td><td>A02</td><td>A12</td><td>Z99</td></tr>
     <tr><td>Mutation en attente</td><td>A15</td><td>A26</td><td>Z99</td></tr>
@@ -1148,13 +1148,12 @@ Les 3 options obligatoires pour la France sont : </p>
     <tbody>
     <tr><td>AD</td><td>Admitting</td><td>&nbsp;</td><td>PV1-17 Admitting doctor</td></tr>
     <tr><td>AT</td><td>Attending</td><td>&nbsp;</td><td>PV1-7 Attending doctor</td></tr>
-    <tr><td>CP (note3)</td><td>Consulting Provider</td><td>&nbsp;</td><td>Médecin consulté pour 2ème avis dans</td></tr>
+    <tr><td>CP<br/>(note3)</td><td>Consulting Provider</td><td>&nbsp;</td><td>Médecin consulté pour 2ème avis dans</td></tr>
     <tr><td>FHCP</td><td>Family Health Care Professional</td><td>&nbsp;</td><td>Médecin de famille. Utilisé dans les</td></tr>
     <tr><td>RP</td><td>Referring Provider</td><td>&nbsp;</td><td>PV1-8 Referring doctor</td></tr>
     <tr><td>RT</td><td>Referred to Provider</td><td>&nbsp;</td><td>Médecin correspondant (définition</td></tr>
-    <tr><td>(note1)</td><td>Officially Declared</td></tr>
-    <tr><td>Referring Physician</td><td>&nbsp;</td><td>Médecin Traitant (définition Sécurité</td></tr>
-    <tr><td>SUBS (note2)</td><td>Substitute</td><td>&nbsp;</td><td>Remplaçant du médecin traitant</td></tr>
+    <tr><td>ODRP<br/>(note1)</td><td>Officially Declared Referring Physician</td><td>&nbsp;</td><td>Médecin Traitant (définition Sécurité</td></tr>
+    <tr><td>SUBS<br/>(note2)</td><td>Substitute</td><td>&nbsp;</td><td>Remplaçant du médecin traitant</td></tr>
     </tbody>
     </table>
      
@@ -1614,8 +1613,7 @@ Les 3 options obligatoires pour la France sont : </p>
     <tr><td>32</td><td>Radiologie (radiodiagnostic et radiothérapie), imagerie médicale</td><td>&nbsp;</td></tr>
     <tr><td>33</td><td>Recherche</td><td>&nbsp;</td></tr>
     <tr><td>37</td><td>Accueil et prise en charge en appartement thérapeutique psychiatrique</td><td>&nbsp;</td></tr>
-    <tr><td>38</td><td>&nbsp;</td></tr>
-    <tr><td>Accueil et prise en charge en centre de posture psychiatrique</td><td>&nbsp;</td></tr>
+    <tr><td>38</td><td>Accueil et prise en charge en centre de posture psychiatrique</td><td>&nbsp;</td></tr>
     <tr><td>39</td><td>Accueil et prise en charge en centre de crise psychiatrique</td><td>&nbsp;</td></tr>
     <tr><td>97</td><td>Activité non dénommée ailleurs</td><td>&nbsp;</td></tr>
     </tbody>
@@ -1697,13 +1695,10 @@ Les 3 options obligatoires pour la France sont : </p>
 
     <table class="table table-condensed table-striped table-bordered">
     <thead>
-    <tr><th>Mode de venue</th><th>PV1-2 classe</th><th>PV1-4
-    </th></tr>
+    <tr><th>Mode de venue</th><th>PV1-2<br/>classe</th><th>PV1-4<br/>type adm</th>
+    <th>PV1-10<br/>DMT</th><th>PV1-19<br/>Identifiant de venue</th><th>PV1-21<br/>mode de traitement</th></tr>
     </thead>
     <tbody>
-    <tr><td>type adm</td><td>PV1-10</td></tr>
-    <tr><td>DMT</td><td>PV1-19</td></tr>
-    <tr><td>Identifiant de venue</td><td>PV1-21</td></tr>
     <tr><td>Hospitalisation complète</td><td>I</td><td>&nbsp;</td><td>(1)</td><td>id séjour</td><td>03</td></tr>
     <tr><td>Hospitalisation partielle de jour</td><td>I</td><td>&nbsp;</td><td>(1)</td><td>id séjour partiel</td><td>04</td></tr>
     <tr><td>Hospitalisation partielle de nuit</td><td>I</td><td>&nbsp;</td><td>(1)</td><td>id séjour partiel</td><td>05</td></tr>
@@ -1712,9 +1707,8 @@ Les 3 options obligatoires pour la France sont : </p>
     <tr><td>Séances</td><td>R</td><td>&nbsp;</td><td>(1)</td><td>id de séance</td><td>19</td></tr>
     <tr><td>Actes et consultation externe</td><td>O</td><td>&nbsp;</td><td>(1)</td><td>&nbsp;</td><td>07</td></tr>
     <tr><td>Rétrocession de médicament</td><td>O</td><td>RM</td><td>&lt;vide&gt;</td><td>id de venue pour la rétrocession</td><td>09</td></tr>
-    <tr><td>Prestation inter établissement en externe</td><td>O</td></tr>
-    <tr><td>&nbsp;</td><td>IE</td><td>(1)</td><td>id de venue externe</td><td>07</td></tr>
-    <tr><td>Prestation inter établissement en séjour &lt;48h</td><td>I</td><td>IE</td><td>(1)</td><td>id de séjour de courte durée</td><td>03 (complète),</td></tr>
+    <tr><td>Prestation inter établissement en externe</td><td>O</td><td>IE</td><td>(1)</td><td>id de venue externe</td><td>07</td></tr>
+    <tr><td>Prestation inter établissement en séjour &lt;48h</td><td>I</td><td>IE</td><td>(1)</td><td>id de séjour de courte durée</td><td>03 (complète), 04 (de jour) ou 05 (de nuit)</td></tr>
     </tbody>
     </table>
 
@@ -1787,7 +1781,7 @@ Les 3 options obligatoires pour la France sont : </p>
     </tbody>
     </table>
      
-        <h3 id="p-pv1-30">PV2-3 :  Mode de placement en psychiatrie (CE)</h3>
+        <h3 id="p-pv2-3">PV2-3 :  Mode de placement en psychiatrie (CE)</h3>
     <p>PV2-3: Admit Reason</p>
     <p>Ce champ est spécialisé par IHE France pour fournir le mode de placement en psychiatrie en association avec les événements suivants : </p>
     <ul>
@@ -1804,11 +1798,9 @@ Les 3 options obligatoires pour la France sont : </p>
 
     <table class="table table-condensed table-striped table-bordered">
     <thead>
-    <tr><th>Value IHE FR </th><th>Description</th><th>Libellé conseillé 
-    </th></tr>
+    <tr><th>Value IHE FR </th><th>Description</th><th>Libellé conseillé</th><th>Commentaire d'IHE France</th></tr>
     </thead>
     <tbody>
-    <tr><td>&nbsp;</td><td>Commentaire d'IHE France</td></tr>
     <tr><td>HL</td><td>&nbsp;</td><td>Hospitalisation libre</td><td>Obsolète depuis 1er Janvier 2012</td></tr>
     <tr><td>HO</td><td>&nbsp;</td><td>Placement d'office</td><td>Obsolète depuis 1er Janvier 2012</td></tr>
     <tr><td>HDT</td><td>&nbsp;</td><td>Hospitalisation à la demande d'un tiers</td><td>Obsolète depuis 1er Janvier 2012</td></tr>
@@ -1833,7 +1825,7 @@ Les 3 options obligatoires pour la France sont : </p>
     PV2|||SPL^soins psychiatriques libres|
     </pre>
 
-        <h3 id="p-pv1-31">PV2-7 : Indicateur de parcours de soins coordonné (IS)</h3>
+        <h3 id="p-pv2-7">PV2-7 : Indicateur de parcours de soins coordonné (IS)</h3>
     <p>PV2-7: Visit User Code</p>
     <p>Le champ PV2-7 contient l'indicateur de parcours de soins. Les valeurs permises par cette extension sont les suivantes : </p>
     <p>HL7 Table 0130 - Visit User Code</p>
@@ -1885,7 +1877,7 @@ Les 3 options obligatoires pour la France sont : </p>
     <li>Le médecin remplaçant du médecin traitant : Segment ROL ("SUBS") derrière le groupe de segments [PV1, PV2, ZBE, ... ZFD].</li>
     </ul>
 
-        <h3  id="p-pv1-32">PV2-22 : Protection concernant la venue (ID)</h3>
+        <h3  id="p-pv2-22">PV2-22 : Protection concernant la venue (ID)</h3>
     <p>PV2-22: Visit Protection Indicator</p>
     <p>Ce champ indique si les données de la venue concernant un patient doivent être protégées ou non.</p>
     <p>Les valeurs de ce champ sont indiquées par la table 0136 -Indicator Y/N</p>
@@ -1903,7 +1895,7 @@ Les 3 options obligatoires pour la France sont : </p>
     </tbody>
     </table>
 
-        <h3 id="p-pv1-33">PV2-30 : Ajustement des charges du patient</h3>
+        <h3 id="p-pv2-30">PV2-30 : Ajustement des charges du patient</h3>
     <p>PV2-30: Patient Charge Adjustment Code</p>
     <p>Ce champ contient un code défini par l'utilisateur. Il permet de savoir si un mouvement est facturable ou non. Les valeurs permises par cette extension sont : </p>
 
@@ -1920,7 +1912,7 @@ Les 3 options obligatoires pour la France sont : </p>
     </tbody>
     </table>
 
-        <h3 id="p-pv1-34">PV2-38 : Mode de transport d'entrée (CE)</h3>
+        <h3 id="p-pv2-38">PV2-38 : Mode de transport d'entrée (CE)</h3>
     <p>PV2-38: Mode of Arrival Code</p>
     <p>Ce champ est requis si connu pour les événements suivants :</p>
     <ul>
@@ -1952,7 +1944,7 @@ Les 3 options obligatoires pour la France sont : </p>
     </tbody>
     </table>
 
-        <h3 id="p-pv1-35">PV2-47 : Date prévue de retour de permission (TS)</h3>
+        <h3 id="p-pv2-47">PV2-47 : Date prévue de retour de permission (TS)</h3>
     <p>PV2-47: Expected LOA return date/time</p>
     <p>Il s'agit de la date du retour prévue. Ce champ est renseigné avec l'événement A21 (départ en permission).</p>
 
@@ -2346,7 +2338,7 @@ Les 3 options obligatoires pour la France sont : </p>
     <tr><td>6</td><td>250</td><td>XAD</td><td>O</td><td>[0..2]</td><td>&nbsp;</td><td>Adresse de l'établissement de provenance ou de destination</td><td>*</td></tr>
     <tr><td>7</td><td>250</td><td>CX</td><td>O</td><td>[0..1]</td><td>&nbsp;</td><td>NDA de l'établissement de provenance</td><td>*</td></tr>
     <tr><td>8</td><td>250</td><td>CX</td><td>O</td><td>[0..N]</td><td>&nbsp;</td><td>Numéro d'archives</td><td>*</td></tr>
-    <tr><td>9</td><td>6</td><td>IS</td><td>O</td><td>[0..1]</td><td>&nbsp;</td><td>Mode de sortie personnalisé</td><td>&nbsp;</td><td>*</td></tr>
+    <tr><td>9</td><td>6</td><td>IS</td><td>O</td><td>[0..1]</td><td>&nbsp;</td><td>Mode de sortie personnalisé</td><td>*</td></tr>
     <tr><td>10</td><td>2</td><td>IS</td><td>C</td><td>[0..1]</td><td>&nbsp;</td><td>Code RIM-P du mode légal de soin transmis dans le PV2-3</td><td>*</td></tr>
     </tbody>
     </table>
@@ -2630,34 +2622,44 @@ Les 3 options obligatoires pour la France sont : </p>
     </th></tr>
     </thead>
     <tbody>
-    <tr><td>Organisme AMO</td><td>Type de débiteur</td><td>CE[250]</td><td>IN1-2</td><td>R</td><td>[1..1]</td><td>Un organisme AMO ou l'aide médicale d'état ou la CMU caisse</td><td>« AMO », « AME », « CMU »</td></tr>
-    <tr><td>Organisme AMO</td><td>régime + caisse + centre</td><td>CX[250]</td><td>IN1-3</td><td>R</td><td>[1..1]</td><td>Concaténation de régime (2), caisse gestionnaire (3), centre  gestionnaire (4)</td><td>Carte Vitale ou attestation de droits</td></tr>
+    <tr><td>Organisme AMO</td><td>Type de débiteur</td><td>CE[250]</td><td>IN1-2</td><td>R</td><td>[1..1]</td><td>Un organisme AMO ou l'aide médicale d'état ou la CMU caisse</td><td>« AMO », « AME », « CMU ». Voir Table 0072 redéfinie par IHE F, en section 4.20</td></tr>
+    <tr><td>Organisme AMO</td><td>régime + caisse + centre</td><td>CX[250]</td><td>IN1-3</td><td>R</td><td>[1..1]</td><td>Concaténation de régime (2), caisse gestionnaire (3), centre  gestionnaire (4)</td><td>Carte Vitale ou attestation de droits<br/>Liste disponible sur le site www.sesam-vitale.fr (table de codification des organismes destinataires)</td></tr>
     <tr><td>Assuré</td><td>NIR (numéro de sécu)</td><td>CX[250]</td><td>IN1-49</td><td>RE</td><td>[0..1]</td><td>NIR + clé</td><td>Carte vitale ou attestation de droits</td></tr>
-    <tr><td>Assuré</td><td>Code gestion lu sur l'attestation ou rendu par l'API de lecture carte vitale</td><td>IS[20]</td><td>IN1-35</td><td>RE</td><td>[0..1]</td><td>2 caractères alphanumérique</td></tr>
-    <tr><td>&nbsp;</td><td>Carte vitale</td></tr>
+    <tr><td>Assuré</td><td>Code gestion lu sur l'attestation ou rendu par l'API de lecture carte vitale</td><td>IS[20]</td><td>IN1-35</td><td>RE</td><td>[0..1]</td><td>2 caractères alphanumérique</td><td>Carte vitale. Liste disponible sur le site www.sesam-vitale.fr (CDC 1.40-dictionnaire des données du poste de travail)</td></tr>
     <tr><td>Assuré</td><td>Identité</td><td>XPN[250]</td><td>IN1-16</td><td>RE</td><td>[0..1]</td><td>Nom, prénom</td><td>&nbsp;</td></tr>
     <tr><td>Assuré</td><td>Adresse</td><td>XAD[250]</td><td>IN1-19</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Assuré</td><td>Téléphones</td><td>XTN[250]</td><td>IN2-63</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    <tr><td>Bénéficiaire</td><td>Rang gémellaire</td><td>NM</td><td>PID-25</td><td>RE</td><td>[0..1]</td><td>« Birth order », un entier positif en cas de naissance multiple.</td></tr>
-    <tr><td>Vide sinon</td><td>Carte vitale ou attestation de droits</td></tr>
-    <tr><td>Bénéficiaire</td><td>Qualité du bénéficiaire</td><td>CE[250]</td><td>IN1-17</td><td>R</td><td>[1..1]</td><td>2 caractères alphanumériques</td></tr>
-    <tr><td>&nbsp;</td><td>Carte vitale ou attestation de droits</td></tr>
+    <tr><td>Bénéficiaire</td><td>Rang gémellaire</td><td>NM</td><td>PID-25</td><td>RE</td><td>[0..1]</td><td>« Birth order », un entier positif en cas de naissance multiple.<br/>Vide sinon</td><td>Carte vitale ou attestation de droits</td></tr>
+    <tr><td>Bénéficiaire</td><td>Qualité du bénéficiaire</td><td>CE[250]</td><td>IN1-17</td><td>R</td><td>[1..1]</td><td>2 caractères alphanumériques</td>
+    <td>Carte vitale ou attestation de droits. Liste disponible sur le site www.sesam-vitale.fr (CDC 1.40-dictionnaire des données du poste de travail)</td></tr>
     <tr><td>Période de couverture</td><td>Début</td><td>DT[8]</td><td>IN1-12</td><td>RE</td><td>[0..1]</td><td>Autant de séquences [IN1, IN2, IN3]que de périodes de couverture AMO</td><td>&nbsp;</td></tr>
     <tr><td>Période de couverture</td><td>Fin</td><td>DT[8]</td><td>IN1-13</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    <tr><td>Période de couverture</td><td>justificatif d'exonération du TM</td><td>IS[3]</td><td>IN1-15</td><td>RE</td><td>[0..1]</td><td>1 caractère alphanumérique</td></tr>
-    <tr><td>&nbsp;</td><td>Annexe 9 norme B2</td></tr>
-    <tr><td>Couverture de la venue</td><td>Nature de la pièce justificative AMO</td><td>ST[2]</td><td>IN1-45</td><td>RE</td><td>[0..1]</td><td>1 caractère numérique</td></tr>
-    <tr><td>&nbsp;</td><td>Annexe 8 norme B2</td></tr>
-    <tr><td>Couverture de la venue</td><td>Demande de prise en charge</td></tr>
-    <tr><td>&nbsp;</td><td>AUI[239]</td><td>IN1-14</td><td>O</td><td>[0..1]</td><td>date de délivrance de l'autorisation (AAAAMMJJ)</td><td>&nbsp;</td></tr>
+    <tr><td>Période de couverture</td><td>justificatif d'exonération du TM</td><td>IS[3]</td><td>IN1-15</td><td>RE</td><td>[0..1]</td><td>1 caractère alphanumérique</td><td>Annexe 9 norme B2</td></tr>
+    <tr><td>Couverture de la venue</td><td>Nature de la pièce justificative AMO</td><td>ST[2]</td><td>IN1-45</td><td>RE</td><td>[0..1]</td><td>1 caractère numérique</td><td>Annexe 8 norme B2</td></tr>
+    <tr><td>Couverture de la venue</td><td>Demande de prise en charge</td><td>AUI[239]</td><td>IN1-14</td><td>O</td><td>[0..1]</td><td>date de délivrance de l'autorisation (AAAAMMJJ)</td><td>&nbsp;</td></tr>
     <tr><td>Couverture de la venue</td><td>Nature d'assurance</td><td>IS[2]</td><td>IN1-31</td><td>RE</td><td>[0..1]</td><td>10 (maladie), 13 (maladie Alsace-Moselle), 30 (Maternité), 41 (Accident du travail), 90 (prévention)</td><td>Norme B2 (type 2-position 77-78)</td></tr>
-    <tr><td>Couverture de la venue</td><td>Nature de la pièce justificative AMO</td><td>ST[2]</td><td>IN1-45</td><td>RE</td><td>[0..1]</td><td>1 caractère numérique</td></tr>
-    <tr><td>&nbsp;</td><td>Annexe 8 norme B2</td></tr>
-    <tr><td>Couverture de la venue</td><td>N° d'accident du travail ou date de l'accident de droit commun ou date de début de grossesse ou date d'accouchement ou d'adoption</td><td>ST[15]</td><td>IN1-36</td><td>C</td><td>[0..1]</td><td>Si accident :</td></tr>
-    <tr><td>O : adoption</td><td>&nbsp;</td></tr>
-    <tr><td>Couverture de la venue</td><td>Situation parcours de soins</td><td>&nbsp;</td><td>PV2-7</td><td>RE</td><td>[0..1]</td><td>cf segment PV2 dans extension française de PAM</td><td>Annexe 25 norme B2</td></tr>
-    <tr><td>Couverture de la venue</td><td>Tiers payant (O/N)</td><td>IS[2]</td><td>IN1-20</td><td>RE</td><td>[0..1]</td><td>Y / N (= rembourser à l'assuré)</td><td>Annexe 25 norme B2</td></tr>
-    <tr><td>Couverture de la venue</td><td>Taux de prise en charge</td><td>MOP[23]</td><td>IN3-5</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>Annexe 25 norme B2</td></tr>
+    <tr><td>Couverture de la venue</td><td>Nature de la pièce justificative AMO</td><td>ST[2]</td><td>IN1-45</td><td>RE</td><td>[0..1]</td><td>1 caractère numérique</td><td>Annexe 8 norme B2</td></tr>
+    <tr><td>Couverture de la venue</td><td>N° d'accident du travail ou date de l'accident de droit commun ou date de début de grossesse ou date d'accouchement ou d'adoption</td><td>ST[15]</td><td>IN1-36</td><td>C</td><td>[0..1]</td>
+    <td>Si accident :
+        <ul>
+        <li>Accident du  travail (nature d’assurance = 41), indiquer le n°AT</li>
+        <li>Accident de droit commun (avec nature d’assurance = 10 ou 13), indiquer date (AAAAMMJJ)</li>
+        <li>Si grossesse, accouchement ou adoption (nature d’assurance 30), indiquer la date correspondante (AAAAMMJJ)</li>
+        </ul>
+        La date sera typée avec un caractère :
+        <ul>
+        <li>D : début grossesse</li>
+        <li>R : date dernières règles</li>
+        <li>A : date accouchement</li>
+        <li>O : adoption</li>
+        </ul></td><td>&nbsp;</td>
+    </tr>
+
+    <tr><td>Couverture de la venue</td><td>Situation parcours de soins</td><td>&nbsp;</td><td>PV2-7</td><td>RE</td><td>[0..1]</td><td>cf segment PV2 dans extension française de PAM</td><td>Annexe 25 norme B2. Ces valeurs sont identiques pour chaque répétition du segment</td></tr>
+
+    <tr><td>Couverture de la venue</td><td>Tiers payant (O/N)</td><td>IS[2]</td><td>IN1-20</td><td>RE</td><td>[0..1]</td><td>Y / N (= rembourser à l'assuré)</td><td>Annexe 25 norme B2. Ces valeurs sont identiques pour chaque répétition du segment</td></tr>
+
+    <tr><td>Couverture de la venue</td><td>Taux de prise en charge</td><td>MOP[23]</td><td>IN3-5</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>Annexe 25 norme B2. Le type MOP se décompose en trois sous-champs. Ici, IN3-5.1 doit être égale à 'PB' qui signifie « pourcentage de la base de remboursement (cf Table 0148 en section 4.21). IN3-5.2 contient le pourcentage (exemple 60)</td></tr>
     </tbody>
     </table>
 
@@ -2679,18 +2681,40 @@ Les 3 options obligatoires pour la France sont : </p>
     <tr><td>Assuré</td><td>Identité</td><td>XPN[250]</td><td>IN1-16</td><td>RE</td><td>[0..1]</td><td>Nom, prénom</td><td>&nbsp;</td></tr>
     <tr><td>Assuré</td><td>Adresse</td><td>XAD[250]</td><td>IN1-19</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Assuré</td><td>Téléphones</td><td>XTN[250]</td><td>IN2-63</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    <tr><td>Bénéficiaire</td><td>Qualité du bénéficiaire</td><td>CE[250]</td><td>IN1-17</td><td>R</td><td>[1..1]</td><td>2 caractères alphanumériques</td></tr>
-    <tr><td>&nbsp;</td><td>Carte vitale ou attestation de droits</td></tr>
+    <tr><td>Bénéficiaire</td><td>Qualité du bénéficiaire</td><td>CE[250]</td><td>IN1-17</td><td>R</td><td>[1..1]</td><td>2 caractères alphanumériques</td>
+    <td>Carte vitale ou attestation de droits. Liste disponible sur le site www.sesam-vitale.fr (CDC 1.40-dictionnaire des données du poste de travail)</td></tr>
+
     <tr><td>Période de droits AMC</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>On donne une seule période par organisme complémentaire : Celle qui s'applique à cette venue.</td><td>&nbsp;</td></tr>
     <tr><td>Période de droits AMC</td><td>Début</td><td>DT[8]</td><td>IN1-12</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Période de droits AMC</td><td>Fin</td><td>DT[8]</td><td>IN1-13</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    <tr><td>Couverture de la venue</td><td>Nature de la pièce justificative AMC</td><td>ST[2]</td><td>IN1-45</td><td>RE</td><td>[0..1]</td><td>1 c numérique</td></tr>
-    <tr><td>&nbsp;</td><td>Annexe 8 norme B2</td></tr>
-    <tr><td>Couverture de la venue</td><td>Type de contrat</td><td>IS[2]</td><td>IN1-31</td><td>RE</td><td>[0..1]</td><td>85 (sortants CMUC géré par AMO)</td></tr>
-    <tr><td>02 (AME complémentaire)</td><td>Fourni par la caisse (attestation)</td></tr>
-    <tr><td>Couverture de la venue</td><td>Taux de prise en charge</td><td>MOP[23]</td><td>IN3-5</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>Le type MOP se décompose en trois sous-champs.</td></tr>
-    <tr><td>Couverture de la venue</td><td>Prestations prises en charge</td><td>RMC[82]</td><td>IN2-28</td><td>O</td><td>[0..*]</td><td>IN2-28.1 :</td></tr>
-    <tr><td>« L » = limité</td><td>&nbsp;</td></tr>
+    <tr><td>Couverture de la venue</td><td>Nature de la pièce justificative AMC</td><td>ST[2]</td><td>IN1-45</td><td>RE</td><td>[0..1]</td><td>1 c numérique</td><td>Annexe 8 norme B2</td></tr>
+    <tr><td>Couverture de la venue</td><td>Type de contrat</td><td>IS[2]</td><td>IN1-31</td><td>RE</td><td>[0..1]</td>
+    <td><ul>
+        <li>85 (sortants CMUC géré par AMO)</li>
+        <li>87 (sortants CMUC géré par AMC)</li>
+        <li>88 (sortants aide à la mutualisation)</li> 
+        <li>89 (bénéficiaire de la CMUC en cours)</li>
+        <li>01 (AME)</li>
+        <li>02 (AME complémentaire)</li>
+        </ul>
+    </td><td>Fourni par la caisse (attestation)</td></tr>
+    <tr><td>Couverture de la venue</td><td>Taux de prise en charge</td><td>MOP[23]</td><td>IN3-5</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td>
+    <td>Le type MOP se décompose en trois sous-champs. Ici, IN3-5.1 donne la nature du taux, renseigné avec une valeur permise par la table 0148 (cf Table 0148 en section 4.21). IN3-5.2 contient le pourcentage (exemple 100)</td></tr>
+    <tr><td>Couverture de la venue</td><td>Prestations prises en charge</td><td>RMC[82]</td><td>IN2-28</td><td>O</td><td>[0..*]</td>
+    <td>
+        IN2-28.1 : 
+        <ul>
+        <li>« FRJ » = Forfait journalier</li>
+        <li>« PRI » = chambre particulière</li>
+        </ul>
+        IN2-28.2 :
+        <ul>
+        <li>« Y » = couvert</li>
+        <li>« N » = non</li>
+        <li>« L » = limité</li>
+        </ul>
+    </td>
+    <td>&nbsp;</td></tr>
     <tr><td>Couverture de la venue</td><td>Tiers payant (Oui/Non)</td><td>IS[2]</td><td>IN1-20</td><td>RE</td><td>[0..1]</td><td>Y / N (= rembourser à l'assuré)</td><td>&nbsp;</td></tr>
     </tbody>
     </table>
@@ -2706,16 +2730,23 @@ Les 3 options obligatoires pour la France sont : </p>
     </th></tr>
     </thead>
     <tbody>
-    <tr><td>Débiteur</td><td>Type de débiteur</td><td>CE[250]</td><td>IN1-2</td><td>R</td><td>[1..1]</td><td>Patient</td></tr>
-    <tr><td>&nbsp;</td><td>PAT, ASS, EMP, ETB, DEP :</td></tr>
+    <tr><td>Débiteur</td><td>Type de débiteur</td><td>CE[250]</td><td>IN1-2</td><td>R</td><td>[1..1]</td><td>
+        <ul>
+        <li>Patient</li>
+        <li>Assuré</li>
+        <li>Etablissement extérieur</li>
+        <li>Employeur</li>
+        <li>Département</li>
+        </ul>
+    </td>
+    <td>PAT, ASS, EMP, ETB, DEP : Table 0072 redéfinie par IHE France, voir section 4.20 </td></tr>
     <tr><td>Débiteur</td><td>Nom ou raison sociale</td><td>XPN[250]</td><td>IN1-16</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Débiteur</td><td>Prénom</td><td>XPN[250]</td><td>IN1-16</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Débiteur</td><td>adresses</td><td>XAD[250]</td><td>IN1-19</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Débiteur</td><td>téléphones</td><td>XTN[250]</td><td>IN2-63</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Période de droits</td><td>Début</td><td>DT[8]</td><td>IN1-12</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Période de droits</td><td>Fin</td><td>DT[8]</td><td>IN1-13</td><td>RE</td><td>[0..1]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    <tr><td>Couverture de la venue</td><td>Nature de la</td></tr>
-    <tr><td>pièce justificative</td><td>ST[2]</td><td>IN1-45</td><td>RE</td><td>[0..1]</td><td>1c numérique</td><td>&nbsp;</td></tr>
+    <tr><td>Couverture de la venue</td><td>Nature de la pièce justificative<td>ST[2]</td><td>IN1-45</td><td>RE</td><td>[0..1]</td><td>1c numérique</td><td>&nbsp;</td></tr>
     </tbody>
     </table>
 
